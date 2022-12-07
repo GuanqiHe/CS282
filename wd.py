@@ -3,6 +3,7 @@ import numpy as np
 import img_lib
 import matplotlib.pyplot as plt
 
+dataset_path = "MNIST\\decompress_mnist\\"
 
 def c_mat_img(x,y):
     xi,xj = x.shape
@@ -98,7 +99,7 @@ if __name__ == "__main__":
     # img1 = img_lib.getimg_downsample("3.png",4)
     # print(np.average(img0),np.average(img1))
     print(cp.installed_solvers())
-    img_list = img_lib.getimg_dataset("MNIST\\decompress_mnist\\train\\0", 1, 2)
+    img_list = img_lib.getimg_dataset(dataset_path+"train\\0", 1, 2)
     img_list = [i[1] for i in img_list]
 
 
